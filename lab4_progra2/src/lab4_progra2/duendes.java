@@ -10,4 +10,9 @@ public class duendes extends piezas{
     String D2Blanco = "D";
     String D3Blanco = "D";
     String D4Blanco = "D";
+
+    @Override
+    public void movimientos(int x1, int y1, int x2, int y2) {
+
+    }
 }
