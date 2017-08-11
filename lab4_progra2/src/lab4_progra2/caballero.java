@@ -2,13 +2,23 @@
 package lab4_progra2;
 
 public class caballero extends piezas{
-   String A1Negro="A"; 
-   String A2Negro="A"; 
-   String A3Negro="A"; 
-   String A4Negro="A"; 
+
+    public caballero() {
+        super();
+    }
+
+    public caballero(String color, String material) {
+        super(color, material);
+    }
 
     @Override
+    public String toString() {
+        return "A";
+    }
+    
+    
+    @Override
     public void movimientos(int x1, int y1, int x2, int y2) {
-
+        
     }
 }
