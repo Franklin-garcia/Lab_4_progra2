@@ -1,14 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package lab4_progra2;
 
-/**
- *
- * @author Ronaldo
- */
 public class duendes {
-    
+
+    String D1Negro = "D";
+    String D2Negro = "D";
+    String D3Negro = "D";
+    String D4Negro = "D";
+    String D1Blanco = "D";
+    String D2Blanco = "D";
+    String D3Blanco = "D";
+    String D4Blanco = "D";
 }
