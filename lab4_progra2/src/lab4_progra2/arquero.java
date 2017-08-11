@@ -10,5 +10,9 @@ package lab4_progra2;
  * @author Ronaldo
  */
 public class arquero extends piezas{
+
+    @Override
+    public void movimientos(int x1, int y1, int x2, int y2) {
+    }
     
 }
