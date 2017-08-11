@@ -115,7 +115,6 @@ public class Lab4_progra2 {
                     String[][] tableroA = new String[11][11];
                     tableroA = tablero();
                     impTablero(tableroA);
-
 ///del juego
                     int cont = 0;
                     String res = "s";
@@ -159,51 +158,55 @@ public class Lab4_progra2 {
         for (int i = 0; i < temporal.length - 1; i++) {
             for (int j = 0; j < temporal.length-1; j++) {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 temporal[i][j] = " ";
 >>>>>>> 09b661087b064090ecf834e48fda8531f556b45f
 =======
                 temporal[i][j] = "-";
 >>>>>>> 823210d70309b0302ca8b28e1c5e460bc68bc7ad
+=======
+                temporal[i][j] = "   ";
+>>>>>>> 01bae223a8a0f03f1efae0a7254ff94a9a46d009
             }
 
         }
         for (int i = 0; i < temporal.length - 1; i++) {
             for (int j = 0; j < temporal.length; j++) {
-                temporal[0][0]="1-"+c.toString();
-                temporal[0][2]="1-"+dr.toString();
-                temporal[0][3]="1-"+a.toString();
-                temporal[0][4]="1-"+r.toString();
-                temporal[0][5]="1-"+m.toString();
-                temporal[0][6]="1-"+a.toString();
-                temporal[0][7]="1-"+dr.toString();
-                temporal[0][9]="1-"+c.toString();
+                temporal[0][0]="1-"+c.toString()+" ";
+                temporal[0][2]="1-"+dr.toString()+" ";
+                temporal[0][3]="1-"+a.toString()+" ";
+                temporal[0][4]="1-"+r.toString()+" ";
+                temporal[0][5]="1-"+m.toString()+" ";
+                temporal[0][6]="1-"+a.toString()+" ";
+                temporal[0][7]="1-"+dr.toString()+" ";
+                temporal[0][9]="1-"+c.toString()+" ";
                 
-                temporal[1][0]="1-"+c.toString();
-                temporal[1][2]="1-"+a.toString();
-                temporal[1][3]="1-"+d.toString();
-                temporal[1][4]="1-"+c.toString();
-                temporal[1][5]="1-"+dr.toString();
-                temporal[1][6]="1-"+d.toString();
-                temporal[1][7]="1-"+a.toString();
-                temporal[1][9]="1-"+d.toString();
+                temporal[1][0]="1-"+c.toString()+" ";
+                temporal[1][2]="1-"+a.toString()+" ";
+                temporal[1][3]="1-"+d.toString()+" ";
+                temporal[1][4]="1-"+c.toString()+" ";
+                temporal[1][5]="1-"+dr.toString()+" ";
+                temporal[1][6]="1-"+d.toString()+" ";
+                temporal[1][7]="1-"+a.toString()+" ";
+                temporal[1][9]="1-"+d.toString()+" ";
                 
-                temporal[8][0]="2-"+c.toString();
-                temporal[8][2]="2-"+dr.toString();
-                temporal[8][3]="2-"+a.toString();
-                temporal[8][4]="2-"+r.toString();
-                temporal[8][5]="2-"+m.toString();
-                temporal[8][6]="2-"+a.toString();
-                temporal[8][7]="2-"+dr.toString();
-                temporal[8][9]="2-"+c.toString();
+                temporal[8][0]="2-"+c.toString()+" ";
+                temporal[8][2]="2-"+dr.toString()+" ";
+                temporal[8][3]="2-"+a.toString()+" ";
+                temporal[8][4]="2-"+r.toString()+" ";
+                temporal[8][5]="2-"+m.toString()+" ";
+                temporal[8][6]="2-"+a.toString()+" ";
+                temporal[8][7]="2-"+dr.toString()+" ";
+                temporal[8][9]="2-"+c.toString()+" ";
                 
-                temporal[9][0]="2-"+c.toString();
-                temporal[9][2]="2-"+a.toString();
-                temporal[9][3]="2-"+d.toString();
-                temporal[9][4]="2-"+c.toString();
-                temporal[9][5]="2-"+dr.toString();
-                temporal[9][6]="2-"+d.toString();
-                temporal[9][7]="2-"+a.toString();
-                temporal[9][9]="2-"+d.toString();
+                temporal[9][0]="2-"+c.toString()+" ";
+                temporal[9][2]="2-"+a.toString()+" ";
+                temporal[9][3]="2-"+d.toString()+" ";
+                temporal[9][4]="2-"+c.toString()+" ";
+                temporal[9][5]="2-"+dr.toString()+" ";
+                temporal[9][6]="2-"+d.toString()+" ";
+                temporal[9][7]="2-"+a.toString()+" ";
+                temporal[9][9]="2-"+d.toString()+" ";
                 
                 
             }
@@ -227,5 +230,6 @@ public class Lab4_progra2 {
             System.out.println("");
         }
     }
+
 
 }//fin de la clase
