@@ -9,6 +9,6 @@ package lab4_progra2;
  *
  * @author Ronaldo
  */
-public class arquero {
+public class arquero extends piezas{
     
 }
