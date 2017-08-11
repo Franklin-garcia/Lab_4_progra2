@@ -19,12 +19,16 @@ public class Lab4_progra2 {
      */
     public static void main(String[] args) {
         ArrayList<Jugador> lista = new ArrayList();
+        
         String opcion = "";
+        
         while (!opcion.equalsIgnoreCase("3")) {
+                
             opcion = JOptionPane.showInputDialog("Opcion \n"
                     + "1-Crear,eliminar,listar-- jugador \n"
                     + "2-Jugar juego \n"
                     + "3-Salir \n");
+           
             switch (opcion) {
                 case "1": {
                     String op = "";
