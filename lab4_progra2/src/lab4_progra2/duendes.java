@@ -1,6 +1,6 @@
 package lab4_progra2;
 
-public class duendes {
+public class duendes extends piezas{
 
     String D1Negro = "D";
     String D2Negro = "D";
