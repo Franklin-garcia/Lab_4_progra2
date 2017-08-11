@@ -18,10 +18,6 @@ public class rey extends piezas{
         return "R";
     }
     
-    
-    
-
-    
     @Override
     public void movimientos(int x1, int y1, int x2, int y2) {
         

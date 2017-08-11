@@ -2,12 +2,7 @@
 package lab4_progra2;
 
 public class dragon extends piezas{
-    String F1Negro;
-    String F2Negro;
-    String F3Negro;
-    String F1Blanco;
-    String F2Blanco;
-    String F3Blanco;
+ 
 
     public dragon() {
         super();
