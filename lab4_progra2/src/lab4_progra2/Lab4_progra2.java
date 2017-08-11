@@ -145,7 +145,7 @@ public class Lab4_progra2 {
        String temporal[][]=new String[10][10];
         for (int i = 0; i < temporal.length-1; i++) {
             for (int j = 0; j < temporal.length; j++) {
-                 temporal[i][j]=c.toString();
+                 temporal[0][0]=c.toString();
                  
             }
         }
@@ -155,7 +155,7 @@ public class Lab4_progra2 {
     public static void impTablero(String [][]a){
         for (int i = 0; i < a.length-1; i++) {
             for (int j = 0; j < a[i].length-1; j++) {
-                System.out.println(a[i][j]);
+                System.out.print(a[i][j]);
             }
             System.out.println("");
         }
