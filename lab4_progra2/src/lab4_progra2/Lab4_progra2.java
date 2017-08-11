@@ -32,7 +32,8 @@ public class Lab4_progra2 {
                         op = JOptionPane.showInputDialog("Opcion \n"
                                 + "1-Crear \n"
                                 + "2-Eliminar \n"
-                                + "3-Modificar");
+                                + "3-Modificar \n"
+                                + "4-salir");
                         switch (op) {
                             case "1": {
                                 String nombre = JOptionPane.showInputDialog("Nombre");
@@ -143,7 +144,7 @@ public class Lab4_progra2 {
         String temporal[][] = new String[11][11];
         for (int i = 0; i < temporal.length - 1; i++) {
             for (int j = 0; j < temporal.length-1; j++) {
-                temporal[i][j] = " ";
+                temporal[i][j] = "-";
             }
 
         }
