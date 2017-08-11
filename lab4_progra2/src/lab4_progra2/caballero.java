@@ -13,7 +13,7 @@ public class caballero extends piezas{
 
     @Override
     public String toString() {
-        return "A";
+        return "C";
     }
     
     
