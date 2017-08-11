@@ -92,8 +92,8 @@ public class Lab4_progra2 {
                                 lista.get(pos).setNacimiento(nacimiento);
                                 lista.get(pos).setEdad(edad);
                                 lista.get(pos).setUsuario(usuario);
-                                lista.get(pos).setSexo(sexo); 
-                                JOptionPane.showMessageDialog(null, "Hecho"); 
+                                lista.get(pos).setSexo(sexo);
+                                JOptionPane.showMessageDialog(null, "Hecho");
                             }
                             break;
 
@@ -102,12 +102,65 @@ public class Lab4_progra2 {
                 }
                 break;
                 case "2": {
+                    String el = "";
+                    for (Jugador i : lista) {
+                        el += "\n" + lista.indexOf(i) + " " + i;
+                    }
+                    int player1 = Integer.parseInt(JOptionPane.showInputDialog(el + "\n"
+                            + "Ingrese player 1"));
+                    int player2 = Integer.parseInt(JOptionPane.showInputDialog(el + "\n"
+                            + "Ingrese player 2"));
+                    
+                    String[][] tableroA = new String[10][10];
+                    tableroA=tablero();
+                    impTablero(tableroA);
+                    
+                    
+                    
+                    
+///del juego
+                    int cont = 0;
+                    String res = "s";
+                    while (res.equals("1")) {
+                        if (cont == 0) {
 
+                            cont++;
+                        } else if (cont == 1) {
+
+                            cont = 0;
+                        }
+                        res = JOptionPane.showInputDialog("Opcion \n"
+                                + "1-Si \n"
+                                + "2-No \n");
+                    }//fin del while
                 }
                 break;
 
             }
         }
+    }//main fin
+    
+    public static String [][]tablero(){
+        caballero c=new caballero();
+       String temporal[][]=new String[10][10];
+        for (int i = 0; i < temporal.length-1; i++) {
+            for (int j = 0; j < temporal.length; j++) {
+                 temporal[i][j]=c.toString();
+                 
+            }
+        }
+        return temporal;
     }
+    
+    public static void impTablero(String [][]a){
+        for (int i = 0; i < a.length-1; i++) {
+            for (int j = 0; j < a[i].length-1; j++) {
+                System.out.println(a[i][j]);
+            }
+            System.out.println("");
+        }
+    }
+    
+    
 
-}
+}//fin de la clase
