@@ -106,14 +106,11 @@ public class Lab4_progra2 {
                             + "Ingrese player 1"));
                     int player2 = Integer.parseInt(JOptionPane.showInputDialog(el + "\n"
                             + "Ingrese player 2"));
-                    
-                    String[][] tableroA = new String[10][10];
-                    tableroA=tablero();
+
+                    String[][] tableroA = new String[11][11];
+                    tableroA = tablero();
                     impTablero(tableroA);
-                    
-                    
-                    
-                    
+
 ///del juego
                     int cont = 0;
                     String res = "s";
@@ -135,28 +132,73 @@ public class Lab4_progra2 {
             }
         }
     }//main fin
-    
-    public static String [][]tablero(){
-        caballero c=new caballero();
-       String temporal[][]=new String[10][10];
-        for (int i = 0; i < temporal.length-1; i++) {
-            for (int j = 0; j < temporal.length; j++) {
-                 temporal[i][j]=c.toString();
-                 
+
+    public static String[][] tablero() {
+        caballero c = new caballero();
+        duendes d = new duendes();
+        mago m = new mago();
+        dragon dr = new dragon();
+        rey r = new rey();
+        arquero a = new arquero();
+        String temporal[][] = new String[11][11];
+        for (int i = 0; i < temporal.length - 1; i++) {
+            for (int j = 0; j < temporal.length-1; j++) {
+                temporal[i][j] = " ";
             }
+
         }
+        for (int i = 0; i < temporal.length - 1; i++) {
+            for (int j = 0; j < temporal.length; j++) {
+                temporal[0][0]="1-"+c.toString();
+                temporal[0][2]="1-"+dr.toString();
+                temporal[0][3]="1-"+a.toString();
+                temporal[0][4]="1-"+r.toString();
+                temporal[0][5]="1-"+m.toString();
+                temporal[0][6]="1-"+a.toString();
+                temporal[0][7]="1-"+dr.toString();
+                temporal[0][9]="1-"+c.toString();
+                
+                temporal[1][0]="1-"+c.toString();
+                temporal[1][2]="1-"+a.toString();
+                temporal[1][3]="1-"+d.toString();
+                temporal[1][4]="1-"+c.toString();
+                temporal[1][5]="1-"+dr.toString();
+                temporal[1][6]="1-"+d.toString();
+                temporal[1][7]="1-"+a.toString();
+                temporal[1][9]="1-"+d.toString();
+                
+                temporal[8][0]="2-"+c.toString();
+                temporal[8][2]="2-"+dr.toString();
+                temporal[8][3]="2-"+a.toString();
+                temporal[8][4]="2-"+r.toString();
+                temporal[8][5]="2-"+m.toString();
+                temporal[8][6]="2-"+a.toString();
+                temporal[8][7]="2-"+dr.toString();
+                temporal[8][9]="2-"+c.toString();
+                
+                temporal[9][0]="2-"+c.toString();
+                temporal[9][2]="2-"+a.toString();
+                temporal[9][3]="2-"+d.toString();
+                temporal[9][4]="2-"+c.toString();
+                temporal[9][5]="2-"+dr.toString();
+                temporal[9][6]="2-"+d.toString();
+                temporal[9][7]="2-"+a.toString();
+                temporal[9][9]="2-"+d.toString();
+                
+                
+            }
+
+        } 
         return temporal;
     }
-    
-    public static void impTablero(String [][]a){
-        for (int i = 0; i < a.length-1; i++) {
-            for (int j = 0; j < a[i].length-1; j++) {
-                System.out.println(a[i][j]);
+
+    public static void impTablero(String[][] a) {
+        for (int i = 0; i < a.length - 1; i++) {
+            for (int j = 0; j < a[i].length - 1; j++) {
+                System.out.print(a[i][j]);
             }
             System.out.println("");
         }
     }
-    
-    
 
 }//fin de la clase
