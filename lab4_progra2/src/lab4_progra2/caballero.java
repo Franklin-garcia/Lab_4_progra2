@@ -33,10 +33,12 @@ public class caballero extends piezas{
     public String toString() {
         return "C";
     }
-    
-    
+
     @Override
-    public void movimientos(int x1, int y1, int x2, int y2) {
-        
+    public void movimientos(String[][] cad, int x1, int y1, int x2, int y2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    
+    
 }

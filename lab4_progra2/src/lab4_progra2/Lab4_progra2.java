@@ -104,6 +104,7 @@ public class Lab4_progra2 {
                     }
                 }
                 break;
+
                 case "2": {
                     int x1 = 0, y1 = 0, x2 = 0, y2 = 0;
                     String el = "";
@@ -125,61 +126,6 @@ public class Lab4_progra2 {
                     int res = 0;
 
                     while (res < 1000000) {
-                        if (res == 0) {
-                            if (cont == 0) {
-                                System.out.println("Turno \n"
-                                        + "Jugador 1");
-                                System.out.println("Ingrese x");
-                                x1 = lectura.nextInt();
-                                System.out.println("Ingrese y");
-                                y1 = lectura.nextInt();
-                                System.out.println("Ingrese x1");
-                                x2 = lectura.nextInt();
-                                System.out.println("Ingrese y2");
-                                y2 = lectura.nextInt();
-                                String vacio = "[ ]";
-                                for (int i = 0; i < tableroA.length - 1; i++) {
-                                    for (int j = 0; j < tableroA[i].length - 1; j++) {
-                                        if (tableroA[x1][y1] == tableroA[i][j]) {
-                                            tableroA[x2][y2] = tableroA[x1][y1];
-                                            tableroA[x1][y1] = vacio;
-                                        }
-
-                                    }
-                                }
-                                impTablero(tableroA);
-
-                                ///fin del juego
-                            }
-                            cont++;
-
-                            if (cont == 1) {
-                                System.out.println("Turno2 \n"
-                                        + "Jugador2");
-                                System.out.println("Ingrese x");
-                                x1 = lectura.nextInt();
-                                System.out.println("Ingrese y");
-                                y1 = lectura.nextInt();
-                                System.out.println("Ingrese x1");
-                                x2 = lectura.nextInt();
-                                System.out.println("Ingrese y2");
-                                y2 = lectura.nextInt();
-                                String vacio = "[ ]";
-                                for (int i = 0; i < tableroA.length - 1; i++) {
-                                    for (int j = 0; j < tableroA[i].length - 1; j++) {
-                                        if (tableroA[x1][y1] == tableroA[i][j]) {
-                                            tableroA[x2][y2] = tableroA[x1][y1];
-                                            tableroA[i][j] = vacio;
-                                        }
-                                    }
-                                }
-                                impTablero(tableroA);
-
-                                ///fin del juego
-                                cont = 0;
-                            }
-                        }
-                        else if(res>0){
                         if (cont == 0) {
                             System.out.println("Turno \n"
                                     + "Jugador 1");
@@ -191,22 +137,15 @@ public class Lab4_progra2 {
                             x2 = lectura.nextInt();
                             System.out.println("Ingrese y2");
                             y2 = lectura.nextInt();
-                            String vacio = "[  ]";
-                            for (int i = 0; i < tableroA.length - 1; i++) {
-                                for (int j = 0; j < tableroA[i].length - 1; j++) {
-                                    if (tableroA[x1][y1] == tableroA[i][j]) {
-                                        tableroA[x2][y2] = tableroA[x1][y1];
-                                        tableroA[i][j] = vacio;
-                                    }
+                            String vacio = "[ ]";
+                            tableroA[x2][y2] = tableroA[x1][y1];
+                            tableroA[x1][y1] = vacio;
 
-                                }
-                            }
                             impTablero(tableroA);
 
                             ///fin del juego
                         }
                         cont++;
-
                         if (cont == 1) {
                             System.out.println("Turno2 \n"
                                     + "Jugador2");
@@ -218,28 +157,25 @@ public class Lab4_progra2 {
                             x2 = lectura.nextInt();
                             System.out.println("Ingrese y2");
                             y2 = lectura.nextInt();
-                            String vacio = "[  ]";
-                            for (int i = 0; i < tableroA.length - 1; i++) {
-                                for (int j = 0; j < tableroA[i].length - 1; j++) {
-                                    if (tableroA[x1][y1] == tableroA[i][j]) {
-                                        tableroA[x2][y2] = tableroA[x1][y1];
-                                        tableroA[x1][y1] = vacio;
-                                    }
-                                }
-                            }
+                            String vacio = "[ ]";
+
+                            tableroA[x2][y2] = tableroA[x1][y1];
+                            tableroA[x1][y1] = vacio;
+
                             impTablero(tableroA);
 
                             ///fin del juego
                             cont = 0;
                         }
-                        }
-                        res++;
-                    }//fin del while
-                }//caso 2
-                break;
 
+                        ///fin del juego
+                        res++;
+                    }
+                }
+                break;
             }
         }
+
     }//main fin
 
     public static String[][] tablero() {
