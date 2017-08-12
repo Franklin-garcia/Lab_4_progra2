@@ -138,9 +138,27 @@ public class Lab4_progra2 {
                             System.out.println("Ingrese y2");
                             y2 = lectura.nextInt();
                             String vacio = "[ ]";
-                            tableroA[x2][y2] = tableroA[x1][y1];
-                            tableroA[x1][y1] = vacio;
-
+                            if (tableroA[x1][y1].equals("1D")) {
+                                try {
+                                    tableroA[x2][y2] = tableroA[x1][y1];
+                                    tableroA[x1][y1] = vacio;
+                                } catch (Exception e) {
+                                    System.out.println("Coordenadas malas");
+                                }
+                            }
+                            else if(tableroA[x1][y1].equals("1C")){
+                                try {
+                                    tableroA[x2][y2] = tableroA[x1][y1];
+                                    tableroA[x1][y1] = vacio;
+                                } catch (Exception e) {
+                                    System.out.println("Coordenadas malas");
+                                }  
+                            }
+                            else {
+                                tableroA[x2][y2] = tableroA[x1][y1];
+                                tableroA[x1][y1] = vacio;
+                            }
+                      
                             impTablero(tableroA);
 
                             ///fin del juego

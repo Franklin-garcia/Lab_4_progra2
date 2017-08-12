@@ -37,5 +37,5 @@ public abstract class  piezas{
     }
     
 
-    public abstract void movimientos(String[][] cad,int x1, int y1, int x2, int y2);
+    public abstract boolean movimientos(String[][] cad,int x1, int y1, int x2, int y2);
 }
