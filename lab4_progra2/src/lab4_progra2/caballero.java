@@ -36,7 +36,14 @@ public class caballero extends piezas{
 
     @Override
     public void movimientos(String[][] cad, int x1, int y1, int x2, int y2) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         Lab4_progra2 llamar = new Lab4_progra2();
+        String a[][];
+        a = llamar.tablero();
+        if (a[x1][y1]=="1C"){
+        if (((x2 == (x1 + 1)) || ((x2==(x1-1)))) && ((y2 == (y1 + 1)) || ((y2==(y1-1)))) ) {
+            
+        }
+        }
     }
     
     
